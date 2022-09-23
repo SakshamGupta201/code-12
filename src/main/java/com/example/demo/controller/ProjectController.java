@@ -15,17 +15,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.model.Project;
 import com.example.demo.model.User;
-import com.example.demo.service.TaskService;
+import com.example.demo.service.ProjectService;
 import com.example.demo.service.UserService;
 
 @Controller
 public class ProjectController {
 
-    private TaskService taskService;
+    private ProjectService taskService;
     private UserService userService;
 
     @Autowired
-    public ProjectController(TaskService taskService, UserService userService) {
+    public ProjectController(ProjectService taskService, UserService userService) {
         this.taskService = taskService;
         this.userService = userService;
     }

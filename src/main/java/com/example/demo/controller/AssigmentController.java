@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.model.Project;
 import com.example.demo.model.User;
-import com.example.demo.service.TaskService;
+import com.example.demo.service.ProjectService;
 import com.example.demo.service.UserService;
 
 @Controller
 public class AssigmentController {
     private UserService userService;
-    private TaskService taskService;
+    private ProjectService taskService;
 
     @Autowired
-    public AssigmentController(UserService userService, TaskService taskService) {
+    public AssigmentController(UserService userService, ProjectService taskService) {
         this.userService = userService;
         this.taskService = taskService;
     }

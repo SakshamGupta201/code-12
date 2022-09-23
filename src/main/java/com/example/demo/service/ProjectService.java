@@ -5,7 +5,7 @@ import java.util.List;
 import com.example.demo.model.Project;
 import com.example.demo.model.User;
 
-public interface TaskService {
+public interface ProjectService {
 
     void createTask(Project task);
 

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.model.User;
-import com.example.demo.service.TaskService;
+import com.example.demo.service.ProjectService;
 import com.example.demo.service.UserService;
 
 import java.security.Principal;
@@ -16,10 +16,10 @@ import java.security.Principal;
 public class ProfileController {
 
     private UserService userService;
-    private TaskService taskService;
+    private ProjectService taskService;
 
     @Autowired
-    public ProfileController(UserService userService, TaskService taskService) {
+    public ProfileController(UserService userService, ProjectService taskService) {
         this.userService = userService;
         this.taskService = taskService;
     }

@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class TaskServiceImpl implements TaskService {
+public class ProjectServiceImpl implements ProjectService {
     private ProjectRepository taskRepository;
 
     @Autowired
-    public TaskServiceImpl(ProjectRepository taskRepository) {
+    public ProjectServiceImpl(ProjectRepository taskRepository) {
         this.taskRepository = taskRepository;
     }
 
